@@ -1,0 +1,43 @@
+.table {
+    margin-top: 50px;
+    overflow: scroll;
+    color: #6a5d5d;
+    background-color: #e6e6e6;
+    height: 70vh;
+    width: 65vw;
+    border: 2px solid lightgrey;
+    padding: 20px;
+}
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+.table__collegeName {
+    color: #6a5d5d;
+}
+
+.table__goto {
+    color: #6a5d5d;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    transition: all 0.4s;
+}
+
+.table tr:hover {
+    transform: scale(1.01);
+    color: #262626;
+}
+
+.table td {
+    padding: 0.5rem;
+    border: none;
+}
+
+.table tr:nth-of-type(odd) {
+    display: none;
+}
