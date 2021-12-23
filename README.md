@@ -1,3 +1,7 @@
+# College listing 
+Site lists different colleges in different countries of the world and provides some of its information using different APIs.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
