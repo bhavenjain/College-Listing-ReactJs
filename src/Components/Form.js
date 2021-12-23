@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-  MenuItem,
-  FormControl,
-  option,
-  Select,
-  InputLabel
-} from '@material-ui/core'
+import { FormControl, option, Select, InputLabel } from '@material-ui/core'
 
 function Form ({ checkCountry, onCheckChange, countryList }) {
   return (
@@ -18,8 +12,6 @@ function Form ({ checkCountry, onCheckChange, countryList }) {
           label='Country'
           onChange={onCheckChange}
         >
-          <MenuItem value='India'>India</MenuItem>
-
           {countryList.map((country, key) => (
             <option key={key} id={key} value={country}>
               {country}

@@ -3,7 +3,7 @@ import Loader from './Loader'
 import axios from 'axios'
 import Form from './Form'
 import Table from './Table'
-import { sortData } from '../util'
+import { sortData, sortCountry } from '../util'
 import './css/Landing.css'
 
 function Landing () {
@@ -34,7 +34,7 @@ function Landing () {
       axios
         .get('http://universities.hipolabs.com/search?')
         .then(response => {
-          const data = response.data
+          const data = sortCountry(response.data)
           setApiCountry(data)
           // console.log(data)
         })
